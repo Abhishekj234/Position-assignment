@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+     
+        .box{
+            border: 2px solid green;
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .box0{
+            position: relative;
+        }
+        .box1{
+            position: absolute;
+            
+        }
+
+        .box2{
+            position: absolute;
+            z-index: 1;
+        }
+
+        .box3{
+            position: absolute;
+        }
+
+        .box4{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        p{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>With Z index</h1>
+    <div class="box box0">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+
+     <p>Z index increase the priority of element </p>
+</body>
+</html>
